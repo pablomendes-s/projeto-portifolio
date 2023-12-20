@@ -25,13 +25,13 @@ header{
     background-color: black;
     box-shadow: 0px 3px 5px white;
     height: 100px;
-    padding: 0px 100px 0px 0px;
+    padding: 0px 10px 0px 0px;
     justify-content: center;
 }
 header > a > img{
     max-width: 250px;
     height: auto;
-    margin: 150px;
+    margin: 100px;
 }
 nav{
     display: flex;  
@@ -39,7 +39,7 @@ nav{
 nav > a {
     text-decoration: none;
     padding: 4px;
-    margin: 10px;
+    margin: 10px ;
     font-weight: bold;
     border-radius: 8px;
     position: relative;
@@ -78,13 +78,14 @@ section {
     display: flex;
     width: 100vw;
     height:900px;
-    padding-top: 100px;
+    padding-top: 20px;
     background-color: black;
 }
 section#biografia{
     background-color: rgb(14, 14, 14);
     padding: 5px;
     justify-content: center;
+
 }
 .conteudo-biografia {
     display: flex;
@@ -133,68 +134,94 @@ div#foto img{
 /* ... (iNICIO DA SEÇÃO "SOBRE") ... */
 
 section#sobre{
+    width: 100vw;
+    height: auto;
     background-color: rgb(0, 0, 0);
     padding: 5px;
     justify-content: center;
     color: white;
-}
-#sobre-content {
-   width: 100vw;
-  
     
 }
+
 #sobre-content > H2 {
     text-align: center;
     padding: 20px;
     font-size: 34px;
 }
-div#sobre-conteudo{
-    display: flex;
-    padding: 50px;
-    width: 100px;
-    
-   
-}  
+ 
 div#info{
-   
     flex-direction: column;
-    height: 150px;
+    height: auto;
     width: 600px;
     font-size: 20px;
-    margin: 20px 0px 100px 800px;
+    margin: 100px 0px 100px 300px;
     justify-items: center; 
-    
+
 }
 div#sobre-imagem{
     width: 25%;
-    
 }
 div#sobre-imagem img{
     padding: 0px;
     max-width: 600px;
     width: 100%;
     height: auto;
-    margin: -400px 0px 1px 1300px;
+    margin: -400px 0px 1px 900px;
     justify-content: center;
     animation: rotateImage 15s linear infinite;
-    
-   
-
 }
 
-/* ... (restante do seu código CSS) ... */
+/* ... (Inicío da Section "Projetos") ... */
 
 section#projetos{
     display: block;
-    background-color: rgb(14, 14, 14);;
+    background-color: rgb(14, 14, 14);
+    justify-content: center;
+    justify-items: center;
 } 
 section#projetos > h2{
     text-align: center;
     color: white;
     font-size: 34px;
 }
+div#cartaz > img{
+    width: 400px ;
+    margin: 100px 10px -80px 10px;
+    border-radius: 20px;
+    
+}
+
+/* ... (Inicío da Section "Habilidades") ... */
+
+section#habilidades{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+   
+}
+
+section#habilidades > h2{
+    text-align: center;
+    font-size: 34px;
+    color: white;
+}
+
 .material-symbols-outlined{
     color:#009dff
+}
+/* ... (Inicío da Section "Certificações") ... */
+
+section#certificacoes{
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+    justify-content: center;
+   
+}
+
+section#certificacoes > h2{
+    text-align: center;
+    font-size: 34px;
+    color: white;
 }
 @keyframes blink {
     0% {
@@ -207,16 +234,7 @@ section#projetos > h2{
         opacity: 1;
     }
 }
-/* Formatação dos subtitulos */
-.subt{
-    display: block;
-    font-size: 20px;
-   
-}
-.blinking-cursor {
-    display: inline-block;
-    animation: blink 1s infinite;
-}
+
 @keyframes moveImage {
     0% {
         transform: translateX(0); /* Inicializa a posição da imagem */
