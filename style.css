@@ -1,6 +1,9 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Saira:wght@100;500&display=swap');
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Saira, sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -8,7 +11,7 @@
 
 
 body {
-    background: linear-gradient(to bottom right, rgb(0, 36, 81) ,rgb(1, 69, 112), rgb(137, 185, 192));
+    
     margin: 0;
 }
 header{
@@ -19,31 +22,50 @@ header{
     z-index: 1000;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.336);
+    background-color: black;
     box-shadow: 0px 3px 5px white;
-    
+    height: 100px;
+    padding: 0px 100px 0px 0px;
+    justify-content: center;
 }
-header > img{
-    max-width: 200px;
+header > a > img{
+    max-width: 250px;
     height: auto;
+    margin: 150px;
 }
 nav{
-    display: flex;
-    
-   
+    display: flex;  
 }
 nav > a {
-    
     text-decoration: none;
-    padding: 5px;
+    padding: 4px;
     margin: 10px;
-    color:  rgb(0, 36, 81);
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    color: #009dff;
+    transition: color .3s ease;
+}
+nav > a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #009dff, #f200ff);
+    opacity: 0;
+    z-index: -1; /* Mova o pseudo-elemento para trás do texto */
+    transition: opacity 1s ease;
+    
+}
+nav > a:hover::before {
+    opacity: 1;
 }
 nav > a:hover{
-    background-color: rgb(137, 185, 192);
-    color: rgb(18, 0, 33);
+    color: black;
+    
 }
 main{
     display: flex;
@@ -53,95 +75,127 @@ main{
     padding: 10px;
 }
 section {
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.2);
     display: flex;
-    width: 98vw;
-    height: 50vw;
+    width: 100vw;
+    height:900px;
     padding-top: 100px;
-    background: linear-gradient(to bottom right, rgb(0, 36, 81) ,rgb(1, 69, 112), rgb(137, 185, 192));
+    background-color: black;
+}
+section#biografia{
+    background-color: rgb(14, 14, 14);
+    padding: 5px;
+    justify-content: center;
+}
+.conteudo-biografia {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    height: 100vh 
 }
 div#bio{
-    background-color: rgb(1, 69, 112);
-    margin-top: 100px;
-    margin-left: 100px;
-    width: 50vw;
-    height: 25vw;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     padding: 100px;
-    box-shadow: 0px 8px 26px  rgba(0, 0, 0, 0.493);
     font-size: 34px;
-    
+    justify-items: center; 
 }  
 div#bio > p{
-    color: white;
-       
+    color: white; 
 }
+
 div#bio > h1{
     color: white;
 }
-div#bio > a > button{
-    height: 60px;
-    width: 300px;
-    border-radius: 20px;
-    font-size: 20px;
-    box-shadow: 0px 8px 26px  rgba(0, 0, 0, 0.493);
-    background-color: rgb(137, 185, 192);
-    margin-top: 10px;
+div#bio > p#gradient{
+    background: linear-gradient(to right, #009dff, #f200ff); 
+    -webkit-background-clip: text; 
+    color: transparent; 
 }
-div#bio > a > button:hover {
-    background-color: rgb(66, 135, 149);
-    
-}
+#links a {
+    display: inline-block;
+  }
+#links a i:hover::before {
+    color: #009dff !important; 
+  }
 div#foto{
-    margin-top: 100px;
-    padding: 100px;
-    margin: auto;
+    margin: 0px -200px 0px -200px;
     display: flex;
-    width: 50vw;
-    align-items: center;
+    justify-items: center; 
+}
+
+div#foto img{
+    padding:  0px;
+    max-width: 100%;
+    height: auto;
+    width: 900px;
+    animation: moveImage 3s linear infinite; /* Adicione a animação "moveImage" */       
+}
+/* ... (iNICIO DA SEÇÃO "SOBRE") ... */
+
+section#sobre{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    justify-content: center;
+    color: white;
+}
+#sobre-content {
+   width: 100vw;
+  
     
 }
-div#foto img{
-    max-width: 100%;
-    height: auto;
-    width: 300px;       
+#sobre-content > H2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 34px;
 }
-section#sobre {
-    border-radius: 10px;
-    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.2);
+div#sobre-conteudo{
     display: flex;
-    width: 98vw;
-    height: 50vw;
-    padding-top: 50px;
-    align-items: center; /* Alinhar os itens no centro verticalmente */
-    justify-content: center; /* Alinhar os itens no centro horizontalmente */
-}
-section#sobre img{
-    max-width: 100%;
-    height: auto;
-    width: 300px;
-    top: auto;
+    padding: 50px;
+    width: 100px;
+    
    
-}
+}  
 div#info{
-    background-color: rgb(1, 69, 112);
-    margin-top: 100px;
-    margin-left: 100px;
-    width: 50vw;
-    height: 25vw;
-    border-radius: 20px;
-    display: flex;
+   
     flex-direction: column;
-    padding: 100px;
-    box-shadow: 0px 8px 26px  rgba(0, 0, 0, 0.493);
-    font-size: 24px;
+    height: 150px;
+    width: 600px;
+    font-size: 20px;
+    margin: 20px 0px 100px 800px;
+    justify-items: center; 
+    
+}
+div#sobre-imagem{
+    width: 25%;
+    
+}
+div#sobre-imagem img{
+    padding: 0px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: -400px 0px 1px 1300px;
+    justify-content: center;
+    animation: rotateImage 15s linear infinite;
+    
+   
+
+}
+
+/* ... (restante do seu código CSS) ... */
+
+section#projetos{
+    display: block;
+    background-color: rgb(14, 14, 14);;
+} 
+section#projetos > h2{
+    text-align: center;
     color: white;
-    margin-top: 5px;
-}    
+    font-size: 34px;
+}
+.material-symbols-outlined{
+    color:#009dff
+}
 @keyframes blink {
     0% {
         opacity: 1;
@@ -153,23 +207,32 @@ div#info{
         opacity: 1;
     }
 }
-
+/* Formatação dos subtitulos */
+.subt{
+    display: block;
+    font-size: 20px;
+   
+}
 .blinking-cursor {
     display: inline-block;
     animation: blink 1s infinite;
 }
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+@keyframes moveImage {
+    0% {
+        transform: translateX(0); /* Inicializa a posição da imagem */
     }
-
-    nav {
-        margin-top: 20px;
+    50% {
+        transform: translateX(50px); /* Move a imagem para a direita */
     }
-
-    nav a {
-        display: block;
-        margin-bottom: 10px;
+    100% {
+        transform: translateX(0); /* Retorna a imagem à posição inicial */
+    }
+}
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg); /* Inicializa a rotação da imagem */
+    }
+    100% {
+        transform: rotate(360deg); /* Completa uma rotação completa (360 graus) */
     }
 }
