@@ -402,7 +402,12 @@ section#certificacoes > h2{
         display: block;
     }
     div#foto{
-        margin: -400px 0px 0px 50px;
+        margin: -400px 0px 0px 20px;
+    }
+    div#info{
+        width: 400px;
+        margin-left: 160px;
+        
     }
     div#foto img {
         width: 80vw;
