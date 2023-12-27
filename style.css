@@ -43,8 +43,8 @@ nav{
 }
 nav > a {
     text-decoration: none;
-    padding: 4px;
-    margin: 5px ;
+    padding: 3px;
+    margin: 1px ;
     font-weight: bold;
     border-radius: 8px;
     position: relative;
