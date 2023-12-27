@@ -385,6 +385,7 @@ section#certificacoes > h2{
 
     nav > a {
         font-size: 0.7rem;
+        margin: 1px;
     }
 
     main {
