@@ -377,15 +377,20 @@ section#certificacoes > h2{
 @media only screen and (max-width: 600px) {
     header {
         height: 60px;
+        display: block;
+        text-align: center;
+        height: 130px;
+        
     }
 
     header > a > img {
-        max-width: 120px;
+        max-width: 180px;
     }
 
     nav > a {
         font-size: 0.7rem;
         margin: 1px;
+        margin-top: -30px;
     }
 
     main {
