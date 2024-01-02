@@ -14,8 +14,6 @@ Elaborei um portfólio com a finalidade de exibir meus projetos e competências 
 
 <a href="https://pablomendes-s.github.io/projeto-portifolio/">Você pode visualizar o projeto no ar clicando aqui</a>
 
-<h2>:grinning: Como utilizar</h2>
-
 <h2>:hammer: Créditos</h2>
 <table>
   <tr>
