@@ -21,7 +21,7 @@ Elaborei um portfólio com a finalidade de exibir meus projetos e competências 
   <tr>
     <td align="center">
       <a href="https://github.com/pablomendes-s">
-        <img src="https://cdn.discordapp.com/attachments/908101448112431115/964905499613077504/me.png" width="100px;" alt="Foto de Pabo Mendes"/><br>
+        <img src="https://i.ibb.co/HKTB9XG/fotoeu.png" width="100px;" alt="Foto de Pabo Mendes"/><br>
         <sub>
           <b>Pablo Mendes</b>
         </sub>
