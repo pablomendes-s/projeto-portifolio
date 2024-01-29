@@ -30,20 +30,23 @@ header{
     background-color: black;
     box-shadow: 0px 3px 5px white;
     height: 100px;
-    padding: 0px 10px 0px 0px;
+    padding: 0px;
     justify-content: center;
 }
+
 header > a > img{
     max-width: 250px;
     height: auto;
     margin: auto;
 }
+/* menu para desktop*/
 nav{
     display: flex;  
 }
+
 nav > a {
     text-decoration: none;
-    padding: 3px;
+    padding: 5px 5px 5px 10px;
     margin: 1px ;
     font-weight: bold;
     border-radius: 8px;
@@ -52,6 +55,7 @@ nav > a {
     color: #009dff;
     transition: color .3s ease;
 }
+
 nav > a::before {
     content: '';
     position: absolute;
@@ -65,34 +69,42 @@ nav > a::before {
     transition: opacity 1s ease;
     
 }
+
 nav > a:hover::before {
     opacity: 1;
 }
+
 nav > a:hover{
-    color: black;
-    
+    color: black;   
+}
+/* Menu para mobile*/
+.menu-mobile{
+    display: none;
 }
 main{
     flex-direction: column;
     align-items: center;
     margin: 0;
     width: 100vh;
+    flex-grow: 1;
 }
+
 section {
     display: flex;
     width: 100vw;
-    height:auto;
+    height:100vh;
     padding-top: 20px;
     background-color: black;
     justify-content: space-between;
     align-items: center; 
     margin-right: 300px;
-    
+  
 }
 
+/*home*/
 section#biografia{
     width: 100vw;
-    
+    height: 100vh;
     -webkit-box-pack: justify;
     background-color: rgb(14, 14, 14);
     padding: 0px;
@@ -100,6 +112,7 @@ section#biografia{
     color: white;  
     align-items: center;
 }
+
 .conteudo-biografia {
     display: flex;
     align-items: center; 
@@ -107,6 +120,7 @@ section#biografia{
     height: 100vh ;
     margin-top: -100px;
 }
+
 div#bio{
     display: flex;
     flex-direction: column;
@@ -114,39 +128,41 @@ div#bio{
     font-size: 34px;
     justify-items: center; 
     margin-right: 300px;
-   
-    
-   
+    margin-top: 200px;
 }  
+
 div#bio > p{
     color: white; 
 }
 
 div#bio > h1{
-    color: white;
-    
+    color: white; 
 }
+
 .blinking-cursor{
     color: #f200ff;
     font-size: 1.2em;
     animation: blink 1s infinite;
 }
+
 div#bio > p#gradient{
     background: linear-gradient(to right, #009dff, #f200ff); 
     -webkit-background-clip: text; 
     color: transparent; 
 }
+
 #links a {
     display: inline-block;
-  }
+}
+
 #links a i:hover::before {
     color: #009dff !important; 
-  }
+}
+
 div#foto{
     margin: 0px 100px 0px -300px;
     display: flex;
     justify-items: center; 
-    
 }
 
 div#foto img{
@@ -155,24 +171,26 @@ div#foto img{
     width: 100%;
     position: relative;
     animation: moveImage 3s linear infinite; /* Adicione a animação "moveImage" */       
-    
 }
+
 /* ... (iNICIO DA SEÇÃO "SOBRE") ... */
 
 section#sobre{
     width: 100vw;
-    height: auto;
+    height: 100vh;
     background-color: rgb(0, 0, 0);
     padding: 5px;
     justify-content: center;
-    color: white;
-    
+    color: white; 
+    padding-top: 200px;
+    font;
 }
 
 #sobre-content > H2 {
     text-align: center;
-    padding: 20px;
     font-size: 34px;
+    margin-top: -200px;
+    display: block;
 }
  
 div#info{
@@ -182,7 +200,6 @@ div#info{
     font-size: 20px;
     margin: 100px 0px 100px 600px;
     justify-items: center; 
-
 }
 
 div#sobre-imagem img{
@@ -192,7 +209,6 @@ div#sobre-imagem img{
     margin: -400px 600px 50px 1200px;
     justify-content: center;
     animation: rotateImage 15s linear infinite;
-
 }
 
 /* ... (Inicío da Section "Projetos") ... */
@@ -205,73 +221,81 @@ section#projetos{
     padding: 5px;
     justify-content: center;
     color: white;
-    text-align: center;
-
+    text-align: center;  
+    padding-top: 100px; 
     
 } 
+
 section#projetos > h2{
     text-align: center;
     padding: 20px;
     font-size: 34px;
     display: block;  
 }
-div#cartaz{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1320px;
-    margin: 100px auto 0;
-}
-div#cartaz > img{
-    width: 300px;
-    margin: 20px 20px 20px 20px;
-    border-radius: 20px;
-     
-}
-div#cartaz > img:hover{
-    box-shadow: 5px 5px 20px 3px #009dff;
-    transition: .4s;
+
+.card {
+    max-width: 400px; /* Define a largura máxima do card */
+    margin:-50px 20px 120px 20px; 
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border-color:  #009dff;  
+    border-width: 2px;
 }
 
+.col{
+    padding: 10px 50px 100px 100px;
+    margin: 150px -450px -200px 200px;
+}
+.card-body h5{
+    color: #009dff;
+}
 /* ... (Inicío da Section "Habilidades") ... */
 
 section#habilidades{
     width: 100vw;
-    height: auto;
+    height: 100vh;
     background-color: rgb(0, 0, 0);
-    padding: 5px;
+    padding: 20px;
     justify-content: center;
     color: white;
-   
+    padding-top: 40px;
+    margin-top: 0px;
 }
 
 section#habilidades > h2{
-    text-align: center;
+     text-align: center;
     font-size: 34px;
     color: white;
+    padding-top: 150px;
+    margin-top: -810px;
 }
 
-.material-symbols-outlined{
-    color:#009dff
-}
+
 /* ... (Inicío da Section "Certificações") ... */
 
 section#certificacoes{
     width: 100vw;
-    height: auto;
+    height: 100vh;
     background-color: rgb(14, 14, 14);
-    padding: 5px;
-    justify-content: center;
+    padding: 0px;
+    justify-items: center;
     color: white;
-   
+    display: block ; /* Adicione esta linha */
+    align-items: center; /* Adicione esta linha */
 }
 
 section#certificacoes > h2{
-    text-align: center;
+    display: block;
     font-size: 34px;
     color: white;
+    text-align: center;
+    
 }
+/* Carrossel e imagens*/
+.material-symbols-outlined{
+    color:#009dff
+}
+
 ::-webkit-scrollbar {
     width: 5px; /* Largura do cursor de rolagem */
     height: 5px;
@@ -376,12 +400,81 @@ section#certificacoes > h2{
 /* Para telas menores que 600px */
 @media only screen and (max-width: 600px) {
     header {
-        display: block;
-        text-align: center;
+        display: flex;
+        text-align: left;
         height: 80px;
-        
+        justify-content: left;
+    }
+    header a{
+        padding: 50px 15px 0px;
+    }
+    .menu{
+        display: none;
+    }
+    .btn-abrir-menu{
+        color: #009dff;
+        font-size: 35px;
+        padding: 100px;
+    }
+    .menu-mobile{
+        display: block;
+        background-color: rgba(23, 23, 23, 0.895);
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0%;
+        box-sizing: border-box;
+        padding: 0px;
+        z-index: 9999;
+        text-align: right; 
+        overflow-x: hidden;
+        transition: .3s;
     }
 
+    .menu-mobile.abrir-menu{
+        width: 50%;
+        padding: 20px;
+    }
+    .menu-mobile .btn-fechar {
+        padding: 10px 250px 10px 0px;
+    }
+    .menu-mobile .btn-fechar i{
+        color: #009dff;
+        font-size: 30px;
+    }
+    .menu-mobile nav ul {
+        text-align: right;
+        list-style: none;
+        margin: 0px 0px 0px -100px;
+        padding: 0;
+    }
+
+    .menu-mobile nav ul li {
+        display: block;
+        padding-right: 100px;
+        padding-left: 100px;
+        
+    }
+    .menu-mobile nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: #009dff;
+        font-size: 20px;
+        padding: 10px 10px 10px; 
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+    .menu-mobile nav ul li:hover a {
+        color: white;
+        background: linear-gradient(to right, #009dff, #f200ff); 
+        border-radius: 10px;
+        padding: 10px 10px;
+        margin: 0px;
+               
+    }
+    
     header > a > img {
         max-width: 180px;
         margin-top: -40px;
@@ -391,6 +484,7 @@ section#certificacoes > h2{
         font-size: 0.7rem;
         margin-right: 30px;
         margin-top: -40px;
+        display: none;
     }
 
     main {
@@ -398,35 +492,50 @@ section#certificacoes > h2{
     }
 
     div#bio {
-        padding: 10px;
+        padding: 0px;
         font-size: 1.5rem;
-        margin: -100px 0px 00px 60px;
-        width: 380px;
+        margin: -50px 0px 0px 35px;
+        width: 350px;
        
     }
     div#info{
         padding: 10px;
         font-size: 1.1rem;
+        width: 400px;
+        margin-left: 145px;
+        text-align: center;
     }
     
     section#biografia{
         display: block;
     }
+    
     div#foto{
-        margin: -400px 0px 0px 0px;
+        margin: -330px 50px 10px -25px;
     }
-    div#info{
-        width: 400px;
-        margin-left: 160px;
-        
-    }
+    
     div#foto img {
         width: 80vw;
-        margin: 80px 100px 200px 50px;
+        margin: 120px 100px 200px 50px;
     }
     div#cartaz > img{
-        width: 150px;
-        margin: 20px 20px 20px 20px;
+        width: 200px;
+        margin: 10px 1px 1px 0px;
         border-radius: 20px;
+               
     }
+    .card {
+        width: 320px; /* Define a largura máxima do card */
+        margin: -0px 0px 0px 0px; 
+        background-color: rgb(69, 69, 69);
+        color: white;
+             
+    }
+    
+    .col{
+        padding: auto;
+        margin: 180px 100px -250px -60px;
+        
+    }
+  
 }   
