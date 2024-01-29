@@ -231,6 +231,7 @@ section#projetos > h2{
     padding: 20px;
     font-size: 34px;
     display: block;  
+    margin: 10px 10px -120px 10px;
 }
 
 .card {
@@ -526,7 +527,7 @@ section#certificacoes > h2{
     }
     .card {
         width: 320px; /* Define a largura máxima do card */
-        margin: -0px 0px 0px 0px; 
+        margin: 0px 0px 0px 15px; 
         background-color: rgb(69, 69, 69);
         color: white;
         height: auto;
