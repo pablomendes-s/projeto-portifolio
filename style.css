@@ -396,6 +396,24 @@ section#certificacoes > h2{
         margin: 20px 20px 20px 20px;
         border-radius: 20px;
     }
+    .carousel{
+        height: 600px; 
+        perspective: 400px;
+        margin-top: 5%;
+    }
+    .carousel .carousel-item {
+        width: 400px;
+        height: 500px;
+        box-shadow: 0 0 40px #61dafb, 0 0 40px #61dafb, 0 0 40px #61dafb;
+        animation: animate 2s infinite alternate;
+        border-radius: 15px;
+    }
+    
+    @keyframes animate {
+        to {
+          box-shadow: 0 0 50px #61dafb, 0 0 50px #61dafb, 0 0 50px #61dafb;
+        }
+      }
 }
 
 /* Para telas menores que 600px */
@@ -525,18 +543,21 @@ section#certificacoes > h2{
         border-radius: 20px;
                
     }
+    section#projetos{
+        height: auto;
+    }
     .card {
         width: 320px; /* Define a largura máxima do card */
         margin: 0px 0px 0px 15px; 
         background-color: rgb(69, 69, 69);
         color: white;
-        height: auto;
+        
              
     }
     
     .col{
         padding: auto;
-        margin: 180px 100px -250px -60px;
+        margin: 180px 100px -250px -80px;
         
     }
   
