@@ -433,7 +433,7 @@ section#certificacoes > h2{
     .btn-abrir-menu{
         color: #009dff;
         font-size: 35px;
-        padding: 100px;
+        padding: 50px;
     }
     .menu-mobile{
         display: block;
@@ -495,7 +495,7 @@ section#certificacoes > h2{
     }
     
     header > a > img {
-        max-width: 250px;
+        max-width: 220px;
         margin-top: -40px;
     }
 
@@ -547,10 +547,11 @@ section#certificacoes > h2{
         height: auto;
     }
     .card {
-        width: 320px; /* Define a largura máxima do card */
-        margin: 0px 0px 0px 15px; 
+        width: 250px; 
+        margin: 0px 0px 0px 40px;
         background-color: rgb(69, 69, 69);
         color: white;
+        
         
              
     }
