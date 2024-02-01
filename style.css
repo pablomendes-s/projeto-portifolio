@@ -38,6 +38,7 @@ header > a > img{
     max-width: 250px;
     height: auto;
     margin: auto;
+    margin-right: 50px;
 }
 /* menu para desktop*/
 nav{
@@ -46,8 +47,8 @@ nav{
 
 nav > a {
     text-decoration: none;
-    padding: 5px 5px 5px 10px;
-    margin: 1px ;
+    padding: 5px 5px 5px 5px;
+    margin: 10px ;
     font-weight: bold;
     border-radius: 8px;
     position: relative;
@@ -214,15 +215,18 @@ div#sobre-imagem img{
 /* ... (Inicío da Section "Projetos") ... */
 
 section#projetos{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: auto;
     background-color: rgb(14, 14, 14);
     padding: 5px;
     justify-content: center;
     color: white;
-    text-align: center;  
-    padding-top: 100px; 
+    text-align: center;
+    padding-top: 100px;
     
 } 
 
@@ -231,45 +235,110 @@ section#projetos > h2{
     padding: 20px;
     font-size: 34px;
     display: block;  
-    margin: 10px 10px -120px 10px;
-}
-
-.card {
-    max-width: 400px; /* Define a largura máxima do card */
-    margin:-50px 20px 120px 20px; 
-    background-color: rgb(69, 69, 69);
-    color: white;
-    border-color:  #009dff;  
-    border-width: 2px;
+    margin: 10px 10px 20px 
 }
 
 .col{
-    padding: 10px 50px 100px 100px;
-    margin: 150px -450px -200px 200px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 45%; /* Alterado para 45% para deixar algum espaço entre as cards */
+    margin: 10px; /* Adicionei uma margem uniforme entre as cards */
+    margin-top: 80px;
+    margin-left: 50px;
+      
 }
+
+#card1{
+    max-width: 450px; /* Ajuste o tamanho máximo em largura conforme necessário */
+    max-height: 450px; /* Ajuste o tamanho máximo em altura conforme necessário */
+    margin: 0px 0px 0px 230px;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border-color: #009dff;
+    border-width: 2px;
+    box-sizing: border-box;
+    display: flex; 
+}
+
+#card2{
+    max-width: 450px; /* Ajuste o tamanho máximo em largura conforme necessário */
+    max-height: 450px; /* Ajuste o tamanho máximo em altura conforme necessário */
+    margin: 0px 0px 0px 80px;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border-color: #009dff;
+    border-width: 2px;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 0px;
+}
+#card3{
+    max-width: 450px; /* Ajuste o tamanho máximo em largura conforme necessário */
+    max-height: 450px; /* Ajuste o tamanho máximo em altura conforme necessário */
+    margin: 0px 0px 0px 230px;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border-color: #009dff;
+    border-width: 2px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: -80px;
+}
+
+#card4{
+    max-width: 450px; /* Ajuste o tamanho máximo em largura conforme necessário */
+    max-height: 450px; /* Ajuste o tamanho máximo em altura conforme necessário */
+    margin: 0px 0px 0px 80px;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border-color: #009dff;
+    border-width: 2px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: -80px;
+    margin-left: 0px;
+}
+
+
 .card-body h5{
     color: #009dff;
 }
 /* ... (Inicío da Section "Habilidades") ... */
+.card :hover{
+    border-width: 5px;
+}
 
 section#habilidades{
-    width: 100vw;
-    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Ajuste conforme necessário */
     background-color: rgb(0, 0, 0);
     padding: 20px;
-    justify-content: center;
     color: white;
-    padding-top: 40px;
-    margin-top: 0px;
 }
 
 section#habilidades > h2{
-     text-align: center;
+    text-align: center;
     font-size: 34px;
     color: white;
-    padding-top: 150px;
-    margin-top: -810px;
+    margin-top: 100px;
 }
+
+.hab-list{
+    padding-top: 100px;
+    height: auto;
+    width: 150vh;
+    margin: auto;
+    padding-right: auto;
+}
+.col-md-4{
+    max-width: 100px;
+    height: auto;
+    border: #007bff; 
+    margin-left: 150px;
+}
+
 
 
 /* ... (Inicío da Section "Certificações") ... */
@@ -278,11 +347,7 @@ section#certificacoes{
     width: 100vw;
     height: 100vh;
     background-color: rgb(14, 14, 14);
-    padding: 0px;
-    justify-items: center;
-    color: white;
-    display: block ; /* Adicione esta linha */
-    align-items: center; /* Adicione esta linha */
+    display: block ; 
 }
 
 section#certificacoes > h2{
@@ -290,8 +355,56 @@ section#certificacoes > h2{
     font-size: 34px;
     color: white;
     text-align: center;
+    margin-top: 100px;
+
+}
+
+#carrossel{
+    width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #f200ff; 
+    padding: 10px;
+}
+
+#carouselExampleIndicators{
+    background-color: #f200ff;
+}
+.carousel-control-prev{
+    color: #009dff;
+    align-items: center;
+    z-index: 1;
     
 }
+.carousel-control-next{
+    color: #009dff;
+    z-index: 2; 
+}
+
+/* área de contato*/
+section#contato{
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: block;
+    
+}
+
+section#contato h2{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+.mb-3{
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+}
+
 /* Carrossel e imagens*/
 .material-symbols-outlined{
     color:#009dff
@@ -396,28 +509,14 @@ section#certificacoes > h2{
         margin: 20px 20px 20px 20px;
         border-radius: 20px;
     }
-    .carousel{
-        height: 600px; 
-        perspective: 400px;
-        margin-top: 5%;
-    }
-    .carousel .carousel-item {
-        width: 400px;
-        height: 500px;
-        box-shadow: 0 0 40px #61dafb, 0 0 40px #61dafb, 0 0 40px #61dafb;
-        animation: animate 2s infinite alternate;
-        border-radius: 15px;
-    }
-    
-    @keyframes animate {
-        to {
-          box-shadow: 0 0 50px #61dafb, 0 0 50px #61dafb, 0 0 50px #61dafb;
-        }
-      }
+ 
 }
 
 /* Para telas menores que 600px */
 @media only screen and (max-width: 600px) {
+    body{
+        
+   }
     header {
         display: flex;
         text-align: left;
@@ -506,9 +605,6 @@ section#certificacoes > h2{
         display: none;
     }
 
-    main {
-        padding: 5px;
-    }
 
     div#bio {
         padding: 0px;
@@ -518,15 +614,22 @@ section#certificacoes > h2{
        
     }
     div#info{
-        padding: 10px;
+        padding: 40px;
         font-size: 1.1rem;
         width: 400px;
         margin-left: 145px;
         text-align: center;
     }
+
+    div#sobre-imagem{
+       
+     
+
+    }
     
     section#biografia{
         display: block;
+        height: auto;
     }
     
     div#foto{
@@ -535,31 +638,43 @@ section#certificacoes > h2{
     
     div#foto img {
         width: 80vw;
-        margin: 120px 100px 200px 50px;
+        margin: 150px 100px 200px 50px;
+        
     }
-    div#cartaz > img{
-        width: 200px;
-        margin: 10px 1px 1px 0px;
-        border-radius: 20px;
-               
+  
+   section#sobre{
+        margin-top: 150px;
+        margin-bottom: -50px;
     }
-    section#projetos{
-        height: auto;
+    /* configuração dos cards*/
+    .col{
+        padding: 100px;
+        margin: -150px 100px -200px 100px;
+      
+        
     }
     .card {
-        width: 250px; 
-        margin: 0px 0px 0px 40px;
+        width: 300px; 
+        margin: auto;
         background-color: rgb(69, 69, 69);
-        color: white;
-        
-        
-             
+        color: white;    
     }
-    
-    .col{
-        padding: auto;
-        margin: 180px 100px -250px -80px;
-        
+
+    #card1{
+        width: 300px;
+        margin: 100px 100px 100px 100px;
+    }
+    #card2{
+        width: 300px;
+        margin:100px;
+    }
+    #card3{
+        width: 300px;
+        margin: 100px;
+    }
+    #card4{
+        width: 300px;
+        margin: 100px;
     }
   
 }   
