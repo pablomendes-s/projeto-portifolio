@@ -82,6 +82,11 @@ nav > a:hover{
 .menu-mobile{
     display: none;
 }
+nav > a> i {
+    margin-right: 5px;
+    
+}
+
 main{
     flex-direction: column;
     align-items: center;
@@ -215,88 +220,45 @@ div#sobre-imagem img{
 /* ... (Inicío da Section "Projetos") ... */
 
 section#projetos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: auto;
     background-color: rgb(14, 14, 14);
     padding: 5px;
-    justify-content: center;
     color: white;
-    text-align: center;
     padding-top: 100px;
-    
+    display: block;
 } 
 
 section#projetos > h2{
     text-align: center;
+    margin-top: 50px;
     padding: 20px;
     font-size: 34px;
     display: block;  
-    margin: 10px 10px 20px 
 }
 
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 1100px;
+    margin-top: 90px;
+ 
+}
 .col{
-    box-sizing: border-box;
-    padding: 10px;
-    width: 45%; /* Alterado para 45% para deixar algum espaço entre as cards */
-    margin: 10px; /* Adicionei uma margem uniforme entre as cards */
-    margin-top: 80px;
-    margin-left: 50px;
-      
-}
+    width: 500px;
+    margin: 10px;
+    height: 500px;
+    
 
-#card1{
-    max-width: 450px; /* Ajuste o tamanho máximo em largura conforme necessário */
-    max-height: 450px; /* Ajuste o tamanho máximo em altura conforme necessário */
-    margin: 0px 0px 0px 230px;
-    background-color: rgb(69, 69, 69);
-    color: white;
-    border-color: #009dff;
-    border-width: 2px;
-    box-sizing: border-box;
-    display: flex; 
 }
-
-#card2{
-    max-width: 450px; /* Ajuste o tamanho máximo em largura conforme necessário */
-    max-height: 450px; /* Ajuste o tamanho máximo em altura conforme necessário */
-    margin: 0px 0px 0px 80px;
-    background-color: rgb(69, 69, 69);
+.card{
+    background-color: rgb(40, 40, 40);
     color: white;
     border-color: #009dff;
-    border-width: 2px;
-    box-sizing: border-box;
-    display: flex;
-    margin-left: 0px;
-}
-#card3{
-    max-width: 450px; /* Ajuste o tamanho máximo em largura conforme necessário */
-    max-height: 450px; /* Ajuste o tamanho máximo em altura conforme necessário */
-    margin: 0px 0px 0px 230px;
-    background-color: rgb(69, 69, 69);
-    color: white;
-    border-color: #009dff;
-    border-width: 2px;
-    box-sizing: border-box;
-    display: flex;
-    margin-top: -80px;
-}
-
-#card4{
-    max-width: 450px; /* Ajuste o tamanho máximo em largura conforme necessário */
-    max-height: 450px; /* Ajuste o tamanho máximo em altura conforme necessário */
-    margin: 0px 0px 0px 80px;
-    background-color: rgb(69, 69, 69);
-    color: white;
-    border-color: #009dff;
-    border-width: 2px;
-    box-sizing: border-box;
-    display: flex;
-    margin-top: -80px;
-    margin-left: 0px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 
@@ -304,8 +266,9 @@ section#projetos > h2{
     color: #009dff;
 }
 /* ... (Inicío da Section "Habilidades") ... */
-.card :hover{
-    border-width: 5px;
+.col :hover{
+    border-width: 3px;
+
 }
 
 section#habilidades{
@@ -339,6 +302,23 @@ section#habilidades > h2{
     margin-left: 150px;
 }
 
+#btnLeiaMais{
+    margin: auto;
+    display: block;
+    padding: 2px 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #009dff, #f200ff); 
+    color: white;
+}
+
+#btnLeiaMais:hover{
+    transition: .4s ease all;
+    padding: 5px 30px;
+}
+/* botão "Leia mais" */
+#vmais{
+    display: none;
+}
 
 
 /* ... (Inicío da Section "Certificações") ... */
@@ -358,36 +338,31 @@ section#certificacoes > h2{
     margin-top: 100px;
 
 }
-
+/* Carrossel e imagens*/
 #carrossel{
-    width: 500px;
+    width: 600px;
     margin: auto;
     margin-top: 80px;
-    background-color: #f200ff; 
-    padding: 10px;
+   
 }
 
-#carouselExampleIndicators{
-    background-color: #f200ff;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #009dff47;
+
 }
-.carousel-control-prev{
-    color: #009dff;
-    align-items: center;
-    z-index: 1;
-    
-}
-.carousel-control-next{
-    color: #009dff;
-    z-index: 2; 
-}
+
+
+
+
+
 
 /* área de contato*/
 section#contato{
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: #009dff;
     display: block;
-    
 }
 
 section#contato h2{
@@ -396,16 +371,31 @@ section#contato h2{
     margin: auto;
     margin-top: 100px;
     text-align: center;
+    margin-bottom: 100px;
     
 }
 
 .mb-3{
     margin: auto;
-    margin-top: 100px;
+    margin-top: 20px;
     width: 500px;
 }
 
-/* Carrossel e imagens*/
+#contato > form > button {
+    display: block;
+    margin: auto;
+    padding: 2px 20px;
+    background: linear-gradient(to right, #009dff, #f200ff); 
+    border-radius: 10px;
+    color: white;
+}
+
+#contato > form > button:hover {
+    transition: .4s ease all;
+    padding: 5px 30px;
+}
+
+
 .material-symbols-outlined{
     color:#009dff
 }
@@ -416,8 +406,8 @@ section#contato h2{
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #009dff; /* Cor do cursor de rolagem */
-    border-radius: 10px; /* Borda arredondada do cursor de rolagem */
+    background-color: #009dff; 
+    border-radius: 10px; 
 }
 
 @keyframes blink {
@@ -652,29 +642,6 @@ section#contato h2{
         margin: -150px 100px -200px 100px;
       
         
-    }
-    .card {
-        width: 300px; 
-        margin: auto;
-        background-color: rgb(69, 69, 69);
-        color: white;    
-    }
-
-    #card1{
-        width: 300px;
-        margin: 100px 100px 100px 100px;
-    }
-    #card2{
-        width: 300px;
-        margin:100px;
-    }
-    #card3{
-        width: 300px;
-        margin: 100px;
-    }
-    #card4{
-        width: 300px;
-        margin: 100px;
     }
   
 }   
