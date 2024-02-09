@@ -28,7 +28,7 @@ header{
     z-index: 1000;
     align-items: center;
     background-color: black;
-    box-shadow: 0px 3px 5px white;
+    box-shadow: 0px 3px 15px white;
     height: 100px;
     padding: 0px;
     justify-content: center;
@@ -403,6 +403,17 @@ section#contato h2{
     padding: 5px 30px;
 }
 
+footer > p { 
+    color: #009dff;
+    display: block;
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border-top: 1px solid #ffffff;
+    box-shadow: 0px -3px 15px white;
+}
 
 .material-symbols-outlined{
     color:#009dff
