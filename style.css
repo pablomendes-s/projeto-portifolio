@@ -243,7 +243,7 @@ section#projetos > h2{
     justify-content: center;
     margin: auto;
     width: 1100px;
-    margin-top: 90px;
+    margin-top: 150px;
  
 }
 .col{
@@ -256,7 +256,6 @@ section#projetos > h2{
 .card{
     background-color: rgb(40, 40, 40);
     color: white;
-    border-color: #009dff;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -264,12 +263,15 @@ section#projetos > h2{
 
 .card-body h5{
     color: #009dff;
+   
 }
 /* ... (Inicío da Section "Habilidades") ... */
-.col :hover{
-    border-width: 3px;
-
+.col > :hover{
+    box-shadow: 0 0 10px #009dff, 0 0 20px #009dff, 0 0 30px #525b61, 0 0 20px #3f4a51;
+    transition: box-shadow 0.5s ease;
 }
+
+
 
 section#habilidades{
     display: block;
@@ -294,12 +296,14 @@ section#habilidades > h2{
     width: 150vh;
     margin: auto;
     padding-right: auto;
+    position: relative;
 }
 .col-md-4{
     max-width: 100px;
     height: auto;
     border: #007bff; 
     margin-left: 150px;
+    z-index: 2;
 }
 
 #btnLeiaMais{
@@ -309,7 +313,11 @@ section#habilidades > h2{
     border-radius: 10px;
     background: linear-gradient(to right, #009dff, #f200ff); 
     color: white;
+    z-index: 3;
+    margin-top: 40px;
 }
+
+
 
 #btnLeiaMais:hover{
     transition: .4s ease all;
@@ -345,17 +353,17 @@ section#certificacoes > h2{
     margin-top: 80px;
    
 }
+#carrossel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #009dff47;
 
 }
-
-
-
-
-
 
 /* área de contato*/
 section#contato{
@@ -611,12 +619,6 @@ section#contato h2{
         text-align: center;
     }
 
-    div#sobre-imagem{
-       
-     
-
-    }
-    
     section#biografia{
         display: block;
         height: auto;
@@ -632,15 +634,59 @@ section#contato h2{
         
     }
   
-   section#sobre{
+    section#sobre{
         margin-top: 150px;
         margin-bottom: -50px;
     }
-    /* configuração dos cards*/
+    
+    section#projetos{
+        height: 2100px;
+    }
+    #projects{
+        display: block;
+        justify-content: center;
+        margin: 0px 50px 500px -180px;
+        width: 600px;
+        margin-top: 90px;
+    }
+
+    #projects .col {
+        margin-bottom: 100px; /* Adicione esta linha para a margem inferior */
+        margin-right: 0; /* Remova a margem direita */
+        width: 130vw; /* Ajuste a largura conforme necessário */
+    }
+ 
+
+    .hab-list{
+        padding-top: 100px;
+        height: auto;
+        width: 45vh;
+        margin: 0px 0px 0px 0px;
+        padding-right: auto;
+        position: relative;
+        text-align: justify;
+    }
+    section#certificacoes{
+        height: 550px;
+    }
+
+    #carrossel{
+        width: 400px;
+        margin: 10px 10px 20px 5px;
+        margin-top: 80px;
+       
+    }
     .col{
         padding: 100px;
         margin: -150px 100px -200px 100px;
-      
+    }
+
+    #formulario{
+        width: 400px;
+        margin: auto; 
+    }
+    .form-control{
+        width: 400px;
         
     }
   
