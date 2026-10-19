@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Pablo Mendes</title>
+    <title>Pablo Mendes | Python / Django Developer</title>
+    <meta name="description" content="Pablo Mendes – Python / Django developer based in Dublin, Ireland. Creator of ConsignaPlus, a SaaS CRM for credit brokers.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f0be0d883d.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bca25db4ac.js" crossorigin="anonymous"></script>
@@ -14,15 +15,19 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="imagens/logonome.png" alt="logo"></a>
+        <a href="index.html"><img src="imagens/logonome.png" alt="Pablo Mendes logo"></a>
         <nav class="menu">
-            <a href="#biografia"><i class="bi bi-house-door"></i>Home</a>
-            <a href="#sobre"><i class="bi bi-person"></i>Sobre mim</a>
-            <a href="#projetos"><i class="bi bi-grid"></i>Projetos</a>
-            <a href="#habilidades"><i class="bi bi-wrench"></i>Habilidades</a>
-            <a href="#certificacoes"><i class="bi bi-patch-check"></i>Certificações</a>
-            <a href="#contato"><i class="bi bi-envelope-at"></i>Contato</a>
+            <a href="#biografia"><i class="bi bi-house-door"></i><span data-i18n="nav.home">Home</span></a>
+            <a href="#sobre"><i class="bi bi-person"></i><span data-i18n="nav.about">About me</span></a>
+            <a href="#projetos"><i class="bi bi-grid"></i><span data-i18n="nav.projects">Projects</span></a>
+            <a href="#habilidades"><i class="bi bi-wrench"></i><span data-i18n="nav.skills">Skills</span></a>
+            <a href="#certificacoes"><i class="bi bi-patch-check"></i><span data-i18n="nav.certs">Certificates</span></a>
+            <a href="#contato"><i class="bi bi-envelope-at"></i><span data-i18n="nav.contact">Contact</span></a>
         </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+            <button type="button" class="lang-btn" data-lang="pt">PT</button>
+        </div>
         <div class="btn-abrir-menu" id="btn-menu">
             <i class="bi bi-list"></i>
         </div>
@@ -32,207 +37,184 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#biografia">Home</a></li>
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#certificacoes">Certificações</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#biografia" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#sobre" data-i18n="nav.about">About me</a></li>
+                    <li><a href="#projetos" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#habilidades" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#certificacoes" data-i18n="nav.certs">Certificates</a></li>
+                    <li><a href="#contato" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </header> 
+    </header>
 
     <main>
         <section id="biografia">
             <div id="conteudo-biografia" class="conteudo-biografia">
                 <div id="bio">
-                    <p>Oi, eu sou</p>
+                    <p data-i18n="hero.hi">Hi, I'm</p>
                     <h1>Pablo Mendes.</h1>
-                    <p id="gradient">Desenvolvedor Python<span class="blinking-cursor">|</span></p>
+                    <p id="gradient"><span data-i18n="hero.role">Python / Django Developer</span><span class="blinking-cursor">|</span></p>
+                    <p class="hero-location"><i class="bi bi-geo-alt"></i> <span data-i18n="hero.location">Dublin, Ireland</span></p>
                     <div id="links">
-                        <a href="http://www.linkedin.com/in/pablomendes-dev" target="blank">
+                        <a href="http://www.linkedin.com/in/pablomendes-dev" target="_blank" rel="noopener" aria-label="LinkedIn">
                             <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
-                        </a>    
-                        <a href="https://github.com/pablomendes-s" target="blank">
+                        </a>
+                        <a href="https://github.com/pablomendes-s" target="_blank" rel="noopener" aria-label="GitHub">
                             <i class="fa-brands fa-square-github" style="color: #ffffff;"></i>
-                        </a>   
-                        <a href="http://www.linkedin.com/in/pablomendes-dev" target="blank">
-                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div id="foto">
-                <img src="imagens/logop.png" alt="reactjs">
+                <img src="imagens/logop.png" alt="Pablo Mendes">
             </div>
         </section>
 
         <section id="sobre">
             <div id="sobre-content">
                 <h2 class="subt">
-                    <span class="material-symbols-outlined">drag_indicator
-                    </span>Sobre mim<span class="material-symbols-outlined">drag_indicator
-                    </span>
-                </h2>               
+                    <span class="material-symbols-outlined">drag_indicator</span><span data-i18n="nav.about">About me</span><span class="material-symbols-outlined">drag_indicator</span>
+                </h2>
                 <div id="info">
-                    <p>Sou formado em Sistemas de Informação desde 2016 e, após seis anos como empresário no setor bancário, estou focado em minha carreira como desenvolvedor Python. Tenho experiência prática no desenvolvimento de um sistema de gestão de contratos e clientes utilizando Django, com ênfase em empréstimos consignados. Além disso, possuo conhecimento em Linux, sempre buscando aplicar boas práticas de programação e expandir minhas habilidades em tecnologias web. Estou comprometido com a entrega de soluções eficientes e escaláveis.</p>
+                    <p data-i18n="about.p1">I hold a Bachelor's degree in Information Systems (2016) and spent six years running Servban, a payroll-loan (consignado) brokerage in Brazil with three branches. That experience taught me how credit operations really work — contracts, commissions, compliance and the daily pain points of the people behind them.</p>
+                    <p data-i18n="about.p2">Now based in Dublin, I build web applications with Python, Django and PostgreSQL. My main project, ConsignaPlus, is a SaaS CRM for credit brokers that runs in production: I designed the data model, authentication, reports, security hardening and deployment.</p>
+                    <p data-i18n="about.p3">I'm looking for my first developer role in Dublin, where I can combine real business experience in financial services with hands-on backend development.</p>
                 </div>
                 <div id="sobre-imagem">
-                    <img src="imagens/atom.png" alt="programador">
+                    <img src="imagens/atom.png" alt="">
                 </div>
             </div>
         </section>
 
-        <!-- inicio da aba projetos -->
+        <!-- Projetos -->
         <section id="projetos">
             <h2 class="subt">
-                <span class="material-symbols-outlined">drag_indicator
-                </span>Projetos<span class="material-symbols-outlined">drag_indicator</span>
+                <span class="material-symbols-outlined">drag_indicator</span><span data-i18n="nav.projects">Projects</span><span class="material-symbols-outlined">drag_indicator</span>
             </h2>
-        
-            <div class="row row-cols-1 row-cols-md-2 g-0" id="projects">
-              <div class="col">
+
+            <div class="row g-0" id="projects">
+              <div class="col col-featured">
                 <div class="card" id="card3">
-                  <img src="imagens/consigna.png" class="card-img-top" alt="...">
+                  <img src="imagens/consigna.png" class="card-img-top" alt="ConsignaPlus screenshot">
                   <div class="card-body">
                     <h5 class="card-title">ConsignaPlus</h5>
-                    <p class="card-text">Micro Saas de gestão de clientes e contratos bancários, desenvolvido para facilitar o dia a dia dos Corbans.</p>
+                    <p class="card-text" data-i18n="proj.cp.desc">SaaS CRM for Brazilian payroll-loan brokers (Corbans): manages clients, contracts and loan proposals end-to-end. Built from my own experience running a brokerage, live in production with paying plans.</p>
+                    <ul class="project-features">
+                      <li data-i18n="proj.cp.f1">Client &amp; contract management with full proposal history tracking</li>
+                      <li data-i18n="proj.cp.f2">Reports centre and financial module with Chart.js dashboards</li>
+                      <li data-i18n="proj.cp.f3">Multi-user accounts, subscription plans and trial system</li>
+                      <li data-i18n="proj.cp.f4">CPF validation (check-digit algorithm) and data integrity rules</li>
+                      <li data-i18n="proj.cp.f5">Security hardening: CSRF/XSS/HSTS, rate limiting and login lockout (django-axes)</li>
+                      <li data-i18n="proj.cp.f6">Deployed on Render with PostgreSQL, custom domain and transactional email</li>
+                    </ul>
+                    <div class="project-stack">
+                      <span>Python</span><span>Django 5.2</span><span>PostgreSQL</span><span>Bootstrap</span><span>Chart.js</span><span>Render</span>
+                    </div>
+                    <a class="project-link" href="https://consignaplus.com.br" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> <span data-i18n="proj.cp.link">Visit live site</span></a>
                   </div>
                 </div>
               </div>
-
-                <div class="col">
-                  <div class="card" id="card1">
-                    <img src="imagens/telalogin.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Tela de login</h5>
-                      <p class="card-text">Tela de loguin com acesso por Username e senha, com campo para recuperação de senha.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card" id="card2">
-                    <img src="imagens/telaandroid.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">História do Android</h5>
-                      <p class="card-text">Página contendo a historia da criação do sistema Android, feito através do curso de HTML e CSS do Curso em vídeo.</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col">
-                  <div class="card" id="card4">
-                    <img src="imagens/embreve.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Novo Projéto</h5>
-                      <p class="card-text">Espaço reservado para projeto futuro.</p>
-                    </div>
-                  </div>
-                </div>
             </div>
-        </section>  
+        </section>
 
         <section id="habilidades">
             <h2 class="subt">
-                <span class="material-symbols-outlined">drag_indicator
-                </span>Habilidades<span class="material-symbols-outlined">drag_indicator</span>
+                <span class="material-symbols-outlined">drag_indicator</span><span data-i18n="nav.skills">Skills</span><span class="material-symbols-outlined">drag_indicator</span>
             </h2>
             <div class="hab-list">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="imagens/html.png.png" class="img-fluid rounded-start" alt="...">
+                    <img src="imagens/python.png.png" class="img-fluid rounded-start" alt="Python">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">HTML5</h5>
-                      <p class="card-text">HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.</p>
+                      <h5 class="card-title">Python</h5>
+                      <p class="card-text" data-i18n="skill.python">My main language: backend logic, data validation, scripts for database migration and custom management commands.</p>
                     </div>
                   </div>
                 </div>
-             
+
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="imagens/css.png.png" class="img-fluid rounded-start" alt="...">
+                    <img src="imagens/django.png" class="img-fluid rounded-start" alt="Django">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">CSS3</h5>
-                      <p class="card-text">Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags style. Também é possível, adicionar estilos adicionando um link para um<span id="pontos">...</span> arquivo CSS que contém os estilos.</p>
+                      <h5 class="card-title">Django</h5>
+                      <p class="card-text"><span data-i18n="skill.django">Models, views, forms, authentication and permissions, ORM queries, migrations and security settings — used to build ConsignaPlus from scratch.</span><span id="pontos">...</span></p>
                     </div>
                   </div>
                 </div>
-                <span id="vmais">         
-               
-            
-                <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="imagens/git.png.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Git</h5>
-                        <p class="card-text">Sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo</p>
-                      </div>
-                    </div>
-                  </div>
-                              
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="imagens/django.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Django</h5>
-                        <p class="card-text">Django é um framework para desenvolvimento rápido para web, escrito em Python, que utiliza o padrão model-template-view.</p>
-                      </div>
-                    </div>
-                  </div>
-                </b>
-              
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="imagens/python.png.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Python</h5>
-                        <p class="card-text">Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991</p>
-                      </div>
-                    </div>
-                  </div>
+                <span id="vmais">
 
                   <div class="row g-0">
                     <div class="col-md-4">
-                      <img src="imagens/postgresql.png" class="img-fluid rounded-start" alt="...">
+                      <img src="imagens/postgresql.png" class="img-fluid rounded-start" alt="PostgreSQL">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
                         <h5 class="card-title">PostgreSQL</h5>
-                        <p class="card-text">O PostgreSQL é um banco de dados relacional de software livre com suporte de 30 anos de desenvolvimento, sendo um dos bancos de dados relacionais mais estabelecidos disponíveis.</p>
+                        <p class="card-text" data-i18n="skill.postgres">Relational data modelling, foreign keys and constraints; migrated a production database between hosting providers.</p>
                       </div>
                     </div>
                   </div>
 
                   <div class="row g-0">
                     <div class="col-md-4">
-                      <img src="imagens/boodstrap.png.png" class="img-fluid rounded-start" alt="...">
+                      <img src="imagens/git.png.png" class="img-fluid rounded-start" alt="Git">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Git</h5>
+                        <p class="card-text" data-i18n="skill.git">Version control with branches and remotes on GitHub; deploys triggered from Git to Render.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="imagens/html.png.png" class="img-fluid rounded-start" alt="HTML5">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML5 &amp; CSS3</h5>
+                        <p class="card-text" data-i18n="skill.html">Django templates, responsive layouts and forms for the front end of my applications.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="imagens/boodstrap.png.png" class="img-fluid rounded-start" alt="Bootstrap">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
                         <h5 class="card-title">Bootstrap</h5>
-                        <p class="card-text">Framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia, melhorando a experiência do usuário.</p>
+                        <p class="card-text" data-i18n="skill.bootstrap">UI components, grids and dashboards; combined with Chart.js for reports.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="imagens/programador.png" class="img-fluid rounded-start" alt="Tools">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title" data-i18n="skill.other.title">Other tools</h5>
+                        <p class="card-text" data-i18n="skill.other">Linux, Docker (basic), AWS (basic), Render, Chart.js, PyCharm.</p>
                       </div>
                     </div>
                   </div></span>
-            
-                  <button onclick="leiaMais()" id="btnLeiaMais">Leia Mais</button>
+
+                  <button onclick="leiaMais()" id="btnLeiaMais" data-i18n="btn.more">Read more</button>
             </div>
         </section>
 
         <section id="certificacoes">
             <h2 class="subt">
-                <span class="material-symbols-outlined">drag_indicator</span>Certificações<span class="material-symbols-outlined">drag_indicator</span>
+                <span class="material-symbols-outlined">drag_indicator</span><span data-i18n="nav.certs">Certificates</span><span class="material-symbols-outlined">drag_indicator</span>
             </h2>
             <div id="carrossel">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -243,34 +225,26 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-
-                </div>
+                    </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="imagens/cert-blockchain.jpg" class="d-block w-100" alt="...">
+                    <img src="imagens/cert-fund-py.jpg" class="d-block w-100" alt="Certificate">
                   </div>
-
                   <div class="carousel-item">
-                    <img src="imagens/cert-Desc-Nuv.jpg" class="d-block w-100" alt="...">
+                    <img src="imagens/cert-Desc-Nuv.jpg" class="d-block w-100" alt="Certificate">
                   </div>
-
                   <div class="carousel-item">
-                    <img src="imagens/cert-fund-eng.jpg" class="d-block w-100" alt="...">
+                    <img src="imagens/cert-fund-eng.jpg" class="d-block w-100" alt="Certificate">
                   </div>
-
                   <div class="carousel-item">
-                    <img src="imagens/cert-lide.jpg" class="d-block w-100" alt="...">
+                    <img src="imagens/cert-blockchain.jpg" class="d-block w-100" alt="Certificate">
                   </div>
-
                   <div class="carousel-item">
-                    <img src="imagens/cert-lot.jpg " class="d-block w-100" alt="...">
+                    <img src="imagens/cert-lide.jpg" class="d-block w-100" alt="Certificate">
                   </div>
-
                   <div class="carousel-item">
-                    <img src="imagens/cert-fund-py.jpg" class="d-block w-100" alt="...">
+                    <img src="imagens/cert-lot.jpg" class="d-block w-100" alt="Certificate">
                   </div>
-
-
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -282,39 +256,37 @@
                 </button>
               </div>
             </div>
-        </div>
         </section>
 
         <section id="contato">
             <h2 class="subt">
-                <span class="material-symbols-outlined">drag_indicator
-                </span>Contato<span class="material-symbols-outlined">drag_indicator</span>
+                <span class="material-symbols-outlined">drag_indicator</span><span data-i18n="nav.contact">Contact</span><span class="material-symbols-outlined">drag_indicator</span>
             </h2>
 
             <form action="https://api.staticforms.xyz/submit" method="post" id="formulario">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                    <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome" required>
+                    <label for="campoNome" class="form-label" data-i18n="form.name">Name</label>
+                    <input type="text" name="name" class="form-control" id="campoNome" data-i18n-placeholder="form.name.ph" placeholder="Your name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                    <label for="campoEmail" class="form-label">E-mail</label>
+                    <input type="email" name="email" class="form-control" id="campoEmail" placeholder="name@example.com" required>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                    <textarea textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="campoMensagem" class="form-label" data-i18n="form.msg">Message</label>
+                    <textarea class="form-control" name="message" id="campoMensagem" rows="3"></textarea>
                 </div>
-                    <button type="submit">Enviar</button>
-                    <input type="hidden" name="accessKey" value="87e44301-e632-473f-a944-6db79a5b9447">
-                    <input type="hidden" name="redirectTo" value="https://pablomendes-s.github.io/projeto-portifolio/#biografia"> 
-                </div>
+                <button type="submit" data-i18n="form.send">Send</button>
+                <input type="hidden" name="accessKey" value="87e44301-e632-473f-a944-6db79a5b9447">
+                <input type="hidden" name="redirectTo" value="https://pablomendes-s.github.io/projeto-portifolio/#biografia">
             </form>
         </section>
 
         <footer>
-            <p>Desenvolvido por,<strong> Pablo Mendes</strong>, todos os direitos reservados.</p>
+            <p><span data-i18n="footer">Developed by</span> <strong>Pablo Mendes</strong> · <span data-i18n="footer.rights">All rights reserved.</span></p>
         </footer>
     </main>
+    <script src="i18n.js"></script>
     <script src="menu.js"></script>
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

@@ -6,11 +6,11 @@ function leiaMais(){
     if(pontos.style.display == "none"){
         pontos.style.display = "inline";
         maisTexto.style.display = "none";
-        btnLeiaMais.innerHTML= "Leia Mais";
+        btnLeiaMais.innerHTML= t("btn.more");
     }else{
         pontos.style.display = "none";
         maisTexto.style.display = "inline";
-        btnLeiaMais.innerHTML= "Leia Menos";
+        btnLeiaMais.innerHTML= t("btn.less");
     }
 }
 
